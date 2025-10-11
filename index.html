@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   
   <!-- ✅ SEO Meta -->
-  <meta name="description" content="Fisch Wiki – guides, codes, updates, and secrets for Roblox's ultimate fishing game. Learn about rods, bosses, relics, admin abuse times, and more.">
+  <meta name="description" content="Fisch Wiki – guides, FAQ, features, codes, updates, and secrets for Roblox's ultimate fishing game. Learn about rods, bosses, relics, admin abuse times, and more.">
   <meta name="keywords" content="fisch, nulltide fisch, mega mayhem fisch, phantom megalodon fisch, skull keystone fisch, fisch admin abuse time, fisch update, fisch discord server, heaven's rod fisch, cosmic relic fisch, sanguine spire fisch, black market fisch">
 
   <style>
@@ -24,11 +24,29 @@
       font-weight: bold;
       margin-top: 10px;
     }
-    .seo-list {
+    .seo-list, .faq, .features, .about {
       margin: 20px 0;
       background: rgba(20, 24, 32, 0.8);
       padding: 15px;
       border-radius: 8px;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .feature {
+      background: rgba(30, 34, 44, 0.9);
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .faq-item {
+      background: rgba(30, 34, 44, 0.9);
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      cursor: pointer;
     }
     .ad {
       text-align: center;
@@ -72,7 +90,7 @@
         <p>Get ready for chaos on <b>October 18, 2025 at 12:00 PM EST</b>.</p>
       </div>
 
-      <!-- ✅ Second Ad (not centered on purpose for variety, can center if needed) -->
+      <!-- ✅ Second Ad -->
       <div class="ad">
         <script type="text/javascript">
           atOptions = {
@@ -130,6 +148,39 @@
           <li><b>Black Market Fisch</b> – Secretive shop with rare goods and exclusive items.</li>
         </ul>
       </div>
+
+      <!-- ✅ What is Fisch -->
+      <section class="about">
+        <h2>What is Fisch?</h2>
+        <p>A strategic fishing RPG experience that transforms classic fishing gameplay with unique bosses, relics, and chaotic admin events.</p>
+        <p><b>Fisch</b> is a Roblox adventure game where players explore oceans, lakes, and secret locations to catch powerful creatures, earn rare relics, and upgrade rods. Unlike simple simulators, Fisch combines <b>strategic fishing mechanics</b>, <b>global boss events</b>, and <b>chaotic admin abuse times</b> that bring the whole server together.</p>
+      </section>
+
+      <!-- ✅ Fisch Features -->
+      <section class="features">
+        <h2>Fisch Features</h2>
+        <p>Discover the unique mechanics that define Fisch.</p>
+        <div class="features-grid">
+          <div class="feature"><b>Legendary Rods</b><br> Collect and upgrade rods like Heaven’s Rod, Leviathan’s Fang, and Mythical rods with special abilities.</div>
+          <div class="feature"><b>Global Boss Events</b><br> Battle creatures like Nulltide, Mega Mayhem, and Phantom Megalodon in epic server-wide fights.</div>
+          <div class="feature"><b>Relic System</b><br> Unlock rare relics like the Cosmic Relic and Sanguine Spire to enhance your fishing power.</div>
+          <div class="feature"><b>Admin Abuse Events</b><br> Experience chaotic fun during scheduled Fisch Admin Abuse times where rules are broken for laughs.</div>
+          <div class="feature"><b>Community Trading</b><br> Trade rods, relics, and catches with other players in the vibrant Fisch economy.</div>
+          <div class="feature"><b>Exploration</b><br> Discover hidden areas, volcanic bays, deep ocean zones, and black markets.</div>
+        </div>
+      </section>
+
+      <!-- ✅ Fisch FAQ -->
+      <section class="faq">
+        <h2>Fisch FAQ</h2>
+        <p>Essential information for mastering Fisch gameplay and progression.</p>
+        <div class="faq-item">How do I start playing Fisch?</div>
+        <div class="faq-item">What is the best rod to begin with?</div>
+        <div class="faq-item">How do boss events like Nulltide work?</div>
+        <div class="faq-item">When are Fisch Admin Abuse times?</div>
+        <div class="faq-item">Can I play without spending Robux?</div>
+        <div class="faq-item">How do relics like the Cosmic Relic work?</div>
+      </section>
     </main>
   </div>
 
@@ -163,7 +214,7 @@
     // Admin Abuse: Oct 18, 2025 12:00 PM EST
     startCountdown("October 18, 2025 12:00:00 EST", "adminCountdown");
 
-    // Next Update: Oct 25, 2025 12 PM EST (example, can be changed)
+    // Next Update: Oct 25, 2025 12 PM EST (example, change if needed)
     startCountdown("October 25, 2025 12:00:00 EST", "updateCountdown");
   </script>
 
