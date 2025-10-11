@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="description" content="Fisch Wiki – guides, codes, updates, and secrets for Roblox's ultimate fishing game. Learn about rods, bosses, events, and Fisch admin abuse times."/>
-  <meta name="keywords" content="fisch, nulltide fisch, mega mayhem fisch, phantom megalodon fisch, skull keystone fisch, fisch admin abuse time, fisch update, fisch discord server, fisch rods, cosmic relic fisch"/>
-  <script defer src="/_vercel/insights/script.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fisch Wiki</title>
+  <title>Fisch Wiki – Roblox Fishing Game</title>
   <link rel="stylesheet" href="style.css" />
+  
+  <!-- ✅ SEO Meta -->
+  <meta name="description" content="Fisch Wiki – guides, codes, updates, and secrets for Roblox's ultimate fishing game. Learn about rods, bosses, relics, admin abuse times, and more.">
+  <meta name="keywords" content="fisch, nulltide fisch, mega mayhem fisch, phantom megalodon fisch, skull keystone fisch, fisch admin abuse time, fisch update, fisch discord server, heaven's rod fisch, cosmic relic fisch, sanguine spire fisch, black market fisch">
+
   <style>
     body, h1, h2, h3, p, li, a, span, b { color: #fff !important; }
-    .faq-item, .feature-card { 
-      background: rgba(20, 24, 32, 0.85); 
-      border-radius: 8px; 
-      padding: 15px; 
-      margin: 10px 0; 
-    }
-    .links { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; margin: 20px 0; }
-    .links a {
-      flex: 1;
-      min-width: 150px;
+    .countdown-box {
+      background: rgba(20, 24, 32, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px 0;
       text-align: center;
-      background: #1a1f29;
+    }
+    .countdown-timer {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .seo-list {
+      margin: 20px 0;
+      background: rgba(20, 24, 32, 0.8);
       padding: 15px;
       border-radius: 8px;
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      border: 1px solid #333;
-      transition: 0.2s;
     }
-    .links a:hover { background: #0d6efd; }
-    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin: 20px 0; }
-    .faq-item { cursor: pointer; }
-    .faq-answer { display: none; margin-top: 10px; font-size: 14px; }
+    .ad {
+      text-align: center;
+      margin: 20px auto;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div style="display:flex; align-items:center;">
-        <span class="title">Fisch</span>
-      </div>
+      <span class="title">Fisch</span>
       <nav>
         <a href="codes.html">Codes</a>
         <a href="links.html">Links</a>
@@ -49,7 +47,7 @@
       </nav>
     </header>
 
-    <!-- Ad placement #1 (Top of page) -->
+    <!-- ✅ First Ad (centered) -->
     <div class="ad">
       <script type="text/javascript">
         atOptions = {
@@ -67,16 +65,14 @@
       <h1>Welcome to the Fisch Wiki</h1>
       <span class="subtitle">Your guide to Roblox’s ultimate fishing adventure</span>
 
-      <!-- OFFICIAL LINKS -->
-      <h2>Official Links</h2>
-      <div class="links">
-        <a href="https://www.roblox.com/games/16732694052/Fisch-SOON" target="_blank">🎮 Roblox Game</a>
-        <a href="https://discord.com/invite/cuKz5SK3md" target="_blank">💬 Discord</a>
-        <a href="https://x.com/FischOnROBLOX" target="_blank">🐦 X</a>
-        <a href="https://www.youtube.com/@FischONRoblox" target="_blank">🎥 YouTube</a>
+      <!-- ✅ Countdown for Admin Abuse -->
+      <div class="countdown-box">
+        <h2>⏰ Next Fisch Admin Abuse Event</h2>
+        <div id="adminCountdown" class="countdown-timer">Loading...</div>
+        <p>Get ready for chaos on <b>October 18, 2025 at 12:00 PM EST</b>.</p>
       </div>
 
-      <!-- Ad placement #2 (Middle of page, after links) -->
+      <!-- ✅ Second Ad (not centered on purpose for variety, can center if needed) -->
       <div class="ad">
         <script type="text/javascript">
           atOptions = {
@@ -90,72 +86,90 @@
         <script type="text/javascript" src="//www.highperformanceformat.com/612aedec5b265285a13b3ed01e816824/invoke.js"></script>
       </div>
 
-      <!-- FEATURES -->
-      <h2>Fisch Features</h2>
-      <p>Discover the depth of fishing, exploration, and adventure that defines Fisch.</p>
-      <div class="features">
-        <div class="feature-card"><h3>🎣 Fishing System</h3><p>Catch hundreds of unique fish across oceans, rivers, and secret locations.</p></div>
-        <div class="feature-card"><h3>⚓ Boats & Exploration</h3><p>Unlock boats to travel further, explore hidden islands, and find rare species.</p></div>
-        <div class="feature-card"><h3>🐟 Trading & Economy</h3><p>Sell fish for coins, trade with others, and climb the economy leaderboard.</p></div>
-        <div class="feature-card"><h3>🌊 Events & Bosses</h3><p>Join global events to awaken mythical sea creatures like Ashclaw or Lusca.</p></div>
-        <div class="feature-card"><h3>🏆 Progression</h3><p>Upgrade rods, level up, and unlock special gear to become a master angler.</p></div>
-        <div class="feature-card"><h3>🗺️ Community</h3><p>Fish alongside friends, complete quests, and enjoy a growing Roblox community.</p></div>
+      <!-- ✅ Countdown for Next Update -->
+      <div class="countdown-box">
+        <h2>📢 Next Fisch Update</h2>
+        <div id="updateCountdown" class="countdown-timer">Loading...</div>
+        <p>Stay tuned for new content, rods, bosses, and relics!</p>
       </div>
 
-      <!-- FAQ -->
-      <h2>Fisch FAQ</h2>
-      <div class="faq-item">
-        <b>How do I start playing Fisch?</b>
-        <div class="faq-answer">Join the Roblox game, grab a starter rod, and begin fishing near the docks. Sell your fish to earn coins!</div>
-      </div>
-      <div class="faq-item">
-        <b>What’s the best way to earn coins fast?</b>
-        <div class="faq-answer">Focus on catching rare fish in deeper waters and join global events for huge rewards.</div>
-      </div>
-      <div class="faq-item">
-        <b>Can I upgrade my rods and boats?</b>
-        <div class="faq-answer">Yes! Use coins to buy stronger rods, faster boats, and special gear to access rarer fish.</div>
-      </div>
-      <div class="faq-item">
-        <b>Are there rare or legendary fish?</b>
-        <div class="faq-answer">Yes, some fish are extremely rare and only appear in certain regions or during events.</div>
+      <!-- ✅ Third Ad (centered again) -->
+      <div class="ad">
+        <script type="text/javascript">
+          atOptions = {
+            'key' : '612aedec5b265285a13b3ed01e816824',
+            'format' : 'iframe',
+            'height' : 50,
+            'width' : 320,
+            'params' : {}
+          };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/612aedec5b265285a13b3ed01e816824/invoke.js"></script>
       </div>
 
-      <!-- WHAT IS FISCH -->
-      <h2>What is Fisch?</h2>
-      <p>
-        Fisch is a Roblox fishing and adventure game where players set sail, catch unique fish, and explore 
-        a vast world full of secrets. You can upgrade rods, unlock boats, trade with others, and participate 
-        in seasonal events. Legendary bosses lurk beneath the waves, waiting to be discovered by teams of 
-        fishers working together. With a thriving economy and endless fish to catch, Fisch delivers an 
-        engaging mix of simulator, adventure, and RPG progression.
-      </p>
+      <!-- ✅ Official Links -->
+      <h2>Official Links</h2>
+      <div class="links">
+        <a href="https://www.roblox.com/games/16732694052/Fisch-SOON" target="_blank">🎮 Roblox Game</a>
+        <a href="https://discord.com/invite/cuKz5SK3md" target="_blank">💬 Discord</a>
+        <a href="https://x.com/FischOnROBLOX" target="_blank">🐦 X</a>
+        <a href="https://www.youtube.com/@FischONRoblox" target="_blank">🎥 YouTube</a>
+      </div>
+
+      <!-- ✅ SEO Keyword Section -->
+      <h2>Popular Fisch Searches</h2>
+      <div class="seo-list">
+        <ul>
+          <li><b>Nulltide Fisch</b> – Rare oceanic boss found in deep waters.</li>
+          <li><b>Mega Mayhem Fisch</b> – Powerful event boss spawning during mayhem events.</li>
+          <li><b>Phantom Megalodon Fisch</b> – Legendary predator appearing only in special conditions.</li>
+          <li><b>Skull Keystone Fisch</b> – Mysterious relic-boss hybrid tied to late-game content.</li>
+          <li><b>Fisch Admin Abuse Time</b> – Community-driven chaotic events run by admins.</li>
+          <li><b>Cosmic Relic Fisch</b> – Ultra-rare relic item with powerful bonuses.</li>
+          <li><b>Heaven’s Rod Fisch</b> – A legendary fishing rod, sought after by top anglers.</li>
+          <li><b>Black Market Fisch</b> – Secretive shop with rare goods and exclusive items.</li>
+        </ul>
+      </div>
     </main>
-
-    <!-- Ad placement #3 (Bottom of page) -->
-    <div class="ad">
-      <script type="text/javascript">
-        atOptions = {
-          'key' : '612aedec5b265285a13b3ed01e816824',
-          'format' : 'iframe',
-          'height' : 50,
-          'width' : 320,
-          'params' : {}
-        };
-      </script>
-      <script type="text/javascript" src="//www.highperformanceformat.com/612aedec5b265285a13b3ed01e816824/invoke.js"></script>
-    </div>
   </div>
 
+  <!-- ✅ Countdown Script -->
   <script>
-    // FAQ toggle
-    document.querySelectorAll(".faq-item").forEach(item => {
-      item.addEventListener("click", () => {
-        const answer = item.querySelector(".faq-answer");
-        answer.style.display = answer.style.display === "block" ? "none" : "block";
-      });
-    });
+    function startCountdown(targetDate, elementId) {
+      const countdownEl = document.getElementById(elementId);
+      const target = new Date(targetDate).getTime();
+
+      function update() {
+        const now = new Date().getTime();
+        const distance = target - now;
+
+        if (distance <= 0) {
+          countdownEl.innerHTML = "🎉 It's happening now!";
+          return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownEl.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+      }
+
+      update();
+      setInterval(update, 1000);
+    }
+
+    // Admin Abuse: Oct 18, 2025 12:00 PM EST
+    startCountdown("October 18, 2025 12:00:00 EST", "adminCountdown");
+
+    // Next Update: Oct 25, 2025 12 PM EST (example, can be changed)
+    startCountdown("October 25, 2025 12:00:00 EST", "updateCountdown");
   </script>
+
+  <!-- ✅ Vercel Analytics -->
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
+
 
