@@ -62,6 +62,45 @@
       text-align: center;
       margin: 25px auto;
     }
+
+    /* ✅ Footer Links */
+    footer {
+      text-align: center;
+      margin: 40px 0;
+      font-size: 14px;
+    }
+    footer a {
+      color: #66c2ff !important;
+      cursor: pointer;
+      margin: 0 8px;
+    }
+
+    /* ✅ Popup */
+    .popup {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.9);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+    .popup-content {
+      background: #111;
+      padding: 20px;
+      max-width: 600px;
+      border-radius: 10px;
+      position: relative;
+      text-align: left;
+    }
+    .popup h2 { margin-top: 0; }
+    .popup .close {
+      position: absolute;
+      top: 10px; right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -231,6 +270,29 @@
       </div>
 
     </main>
+
+    <!-- ✅ Footer -->
+    <footer>
+      <a onclick="openPopup('tosPopup')">Terms of Service</a> | 
+      <a onclick="openPopup('privacyPopup')">Privacy Policy</a>
+    </footer>
+  </div>
+
+  <!-- ✅ Popups -->
+  <div id="tosPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('tosPopup')">&times;</span>
+      <h2>Terms of Service</h2>
+      <p>By using Fisch Wiki, you agree that this site is provided for informational and entertainment purposes only. We are not affiliated with Roblox or Fisch developers. Content may change at any time.</p>
+    </div>
+  </div>
+
+  <div id="privacyPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('privacyPopup')">&times;</span>
+      <h2>Privacy Policy</h2>
+      <p>We may collect basic analytics data (such as page views and visit duration) to improve the site. Ads are displayed to support hosting costs. We do not sell personal data.</p>
+    </div>
   </div>
 
   <!-- ✅ Countdown Script -->
@@ -272,11 +334,18 @@
         item.classList.toggle("active");
       });
     });
+
+    // ✅ Popup Functions
+    function openPopup(id) {
+      document.getElementById(id).style.display = "flex";
+    }
+    function closePopup(id) {
+      document.getElementById(id).style.display = "none";
+    }
   </script>
 
   <!-- ✅ Vercel Analytics -->
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
-
 
