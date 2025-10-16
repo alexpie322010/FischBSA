@@ -273,12 +273,31 @@
 
     <!-- ✅ Footer -->
     <footer>
+      <a onclick="openPopup('aboutPopup')">About</a> | 
+      <a onclick="openPopup('contactPopup')">Contact</a> | 
       <a onclick="openPopup('tosPopup')">Terms of Service</a> | 
       <a onclick="openPopup('privacyPopup')">Privacy Policy</a>
     </footer>
   </div>
 
   <!-- ✅ Popups -->
+  <div id="aboutPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('aboutPopup')">&times;</span>
+      <h2>About This Website</h2>
+      <p>This fan-made wiki was built to provide guides, FAQs, updates, and resources for the Roblox game Fisch. It is not affiliated with Roblox Corporation or the Fisch developers. Our goal is to help players learn, share strategies, and enjoy the game even more.</p>
+    </div>
+  </div>
+
+  <div id="contactPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('contactPopup')">&times;</span>
+      <h2>Contact</h2>
+      <p>If you need support or want to reach out, please email us at:</p>
+      <p><b>support@roblox-fisch.com</b></p>
+    </div>
+  </div>
+
   <div id="tosPopup" class="popup">
     <div class="popup-content">
       <span class="close" onclick="closePopup('tosPopup')">&times;</span>
